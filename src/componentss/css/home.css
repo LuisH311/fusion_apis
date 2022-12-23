@@ -55,7 +55,7 @@ height: 100%;
         margin: 50px;
         width: 40%;
         height: 50%;
-        background-image: url('../img/imagen.jpeg');
+        background-image: url('../img/imagen-api.jpg');
         background-size: 100% 100%;
         overflow: hidden;
     }   
@@ -147,14 +147,32 @@ height: 100%;
            width: 100%;
            margin: auto;
         }
+        .container_outer_img {
+            margin: 50px;
+            width: 30%;
+            height: 50%;
+            background-image: url('../img/imagen-api.jpg');
+            background-size: 100% 100%;
+            overflow: hidden;
+        }   
+          
     }
     
     @media all and (min-width: 1280px){
 
         .container {
-           width: 80%;
+           width: 70%;
            margin: auto;
         }
+        .container_outer_img {
+            margin: 50px;
+            width: 30%;
+            height: 50%;
+            background-image: url('../img/imagen-api.jpg');
+            background-size: 100% 100%;
+            overflow: hidden;
+        }   
+          
     }
     
     

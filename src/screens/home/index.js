@@ -29,16 +29,15 @@ export default function Home() {
     <Login />
   ) : (
     <>
-    
-    {/* <Router> */}
-      <div className="main-body">
-        <Sidebar />
-        {/* <Routes>
-          <Route path="/" element={<Library />} />
-          {<Route path="/player" element={<Player />} />}
-        </Routes> */}
-      </div>
-    {/* </Router> */}
+      {/* <Router> */}
+        <div className="main-body">
+          <Sidebar />
+          {/* <Routes>
+            <Route path="/Library" element={<Library />} />
+            {<Route path="/player" element={<Player />} />}
+          </Routes> */}
+        </div>
+      {/* </Router> */}
     </>
   );
 }

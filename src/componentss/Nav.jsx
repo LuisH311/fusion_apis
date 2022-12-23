@@ -8,10 +8,10 @@ export const Nav = () => {
         {/*   <Link to="/Home"> Home</Link>
         <Link to="/Weather"> Weather</Link>
         <Link to="/apiDivisas"> Api Divisas</Link> */}
-        <a href="/">Home</a>
-        <a href="/Weather">Weather</a>
-        <a href="/apiDivisas">apiDivisas</a>
-        <a href="/Homes">Music</a>
+        <a href="/">Inicio</a>
+        <a href="/Weather">Metereología</a>
+        <a href="/apiDivisas">Convertidor de Divisas</a>
+        <a href="/Homes">Reproductor de Musica</a>
       </nav>
     </div>
   );
