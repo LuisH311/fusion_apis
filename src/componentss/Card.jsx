@@ -18,38 +18,32 @@ export const Card = ({ weather , showData , loadingData}) => {
     }
     return (
     
-    <div className='contenedor-card'>
-    {
-        showData === true ? (
-            <div className='card'>
-                    <div className='imagen-text' >
-                        <div className='imagen'>
-                            <div className='inf-1'>
-                            <h1 className='name-city'>{weather.name}</h1>
-                            <h1 className='name-city'>{fecha}</h1>
-                            </div>
-                            <div className='inf-2'>
-                            <h1 className='name'>{(weather.main.temp - 273.15).toFixed(1)}°C</h1>
-                            <h1 className='name'>
-                            <div className='temperatura'>
-                            {weather.weather[0].description} 
-                            <img src={iconoUrl}/>
-                            </div>
-                            </h1>
-                            </div>
+        <div className='contenedor-card'>
+        {
+            showData === true ? (
+                    <div className={(weather.main.temp - 273.15).toFixed(1)>20 ?'cont_card':'cont_carta'}>
+                        <section className='namee'>
+                        <h5 className='name-name'>{weather.name}</h5>
+                        </section>
+                        <hr className='hr' />
+                        <section className='temp'>
+                            <div className='ico-temp'>
+                        <img className='icono' src={iconoUrl}/>
+                        <h5 className='tempo'>{(weather.main.temp - 273.15).toFixed(1)}°</h5>
                         </div>
-
-                        <div className='informacion'>   
-                        <div className='texto'>
-                        <h1 className='name-city'>Temperatura maxima: {(weather.main.temp_max - 273.15).toFixed(1)}°C</h1>
-                        <h1 className='name-city'>Temperatura minima:      {(weather.main.temp_min - 273.15).toFixed(1)}°C</h1>
-                        <h1 className='name-city'>Sensacion termica:  {(weather.main.feels_like - 273.15).toFixed(1)}°C</h1>
-                        <h1 className='name-city'>Humedad:  {weather.main.humidity}%</h1>
-                        </div>
-                        </div>
+                        <div className='temperatura'>
+                                <h5 className='name-city'>{weather.weather[0].description} </h5>
+                                </div>
+                                <div className='max-min'>
+                                <h5 className='name-city'>Max: {(weather.main.temp_max - 273.15).toFixed(1)}°C</h5>
+                            <h5 className='name-city'> Min:{(weather.main.temp_min - 273.15).toFixed(1)}°C</h5>
+                            </div>
+                        </section>
+                        <hr className='hr' />
+                        <section className='date'>
+                        <h5 className='name-fecha'>{fecha} </h5>
+                        </section>
                     </div>
-                </div>
-            
 
         ):(
             <h2 className='text'> sin datos</h2>

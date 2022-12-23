@@ -22,7 +22,7 @@ export default function App() {
     <Route path="/player" element={<Player />} />
     </Routes> 
   </BrowserRouter>
-    {/*   <Home /> */}
+      {/* <Home /> */}
     </div>
   );
 }

@@ -19,13 +19,13 @@ export const WeatherForms = ({newLocation}) => {
         <div className=" card-body">
         <form className='formulario' onSubmit={handleSubmit} >
             <div className="form-group">
-                <input type="text" name="city" placeholder="Your City Name" className="form-control"  onChange={(e)=>
+                <input type="text" name="city" placeholder="Ingresa la ciudad" className="form-control"  onChange={(e)=>
                     setCity(e.target.value)
                 }
 
                     />
             <button className="btn-block" type='submit' >
-            <MdSearch className='icono'/>
+            <MdSearch className='ico'/>
             </button>
             </div>
         </form>

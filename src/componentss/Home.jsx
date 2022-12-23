@@ -8,15 +8,15 @@ export const Homes = () => {
         <div className="container_content">
         <div className="container_content_inner">
         <div className="title">
-        <h1 className='hello'>Hello World</h1>
+        <h1 className='hello'>Hola Mundo</h1>
         </div>
         <div className="par">
         <p>
-        Cupiditate alias odio omnis minima veritatis saepe porro, repellendus natus vitae, sequi exercitationem ipsam, qui possimus sit eveniet laborum sapiente quisquam quae neque velit? 
+        Bienvenidos a nuestro aplicativo web donde visualizaremos los diferentes servicios que nos ofrecen estas, en las cuales podremos observar su funcionalidad y requerimiento que se le solicite.
         </p>
         </div>
         <div className="btns">
-        <button className='btns_more'> See more </button>
+        <p className='btns_more'> SIGAMOS... </p>
         </div>
         </div>
         </div>

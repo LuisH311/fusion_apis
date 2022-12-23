@@ -34,8 +34,8 @@ export default function Library() {
               className="playlist-image"
               alt="Playlist-Art"
             />
-            <p className="playlist-title">{playlist.name}</p>
-            <p className="playlist-subtitle">{playlist.tracks.total} Songs</p>
+            <b className="playlist-title">{playlist.name}</b>
+            <b className="playlist-subtitle">{playlist.tracks.total} Songs</b>
             <div className="playlist-fade">
               <IconContext.Provider value={{ size: "50px", color: "#E99D72" }}>
                 <AiFillPlayCircle />
